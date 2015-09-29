@@ -27,13 +27,13 @@ Rails.application.configure do
   # number of complex assets.
   config.assets.debug = true
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
+    address: "smtp.mandrillapp.com",
     domain: Rails.application.secrets.domain_name,
-    authentication: "plain",
-    enable_starttls_auto: true,
+    port: 587,
     user_name: Rails.application.secrets.email_provider_username,
     password: Rails.application.secrets.email_provider_password,
+    authentication: "plain",
+    enable_starttls_auto: true,
   }
 
   # ActionMailer Config
