@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 gem 'rails', '4.2.4'
 
+gem 'dotenv-rails', :groups => [:development, :test]
+
 # Rails defaults
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
@@ -23,4 +25,7 @@ group :development do
 	gem 'better_errors'
 	gem 'quiet_assets'
 	gem 'rails_layout'
+	gem 'pry'
+	gem 'pry-byebug'
+	gem 'pry-rails'
 end
