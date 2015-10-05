@@ -12,9 +12,11 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'byebug'
-gem 'web-console', '~> 2.0'
-gem 'spring'
+group :development, :test do
+	gem 'byebug'
+	gem 'web-console', '~> 2.0'
+	gem 'spring'
+end
 
 #learn-rails
 gem 'foundation-rails'
@@ -28,4 +30,8 @@ group :development do
 	gem 'pry'
 	gem 'pry-byebug'
 	gem 'pry-rails'
+end
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
 end
